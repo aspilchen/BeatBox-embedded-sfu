@@ -2,8 +2,9 @@
 A project from CMPT433 (Embedded Systems) at SFU.
 
 Embedded linux drum machine for the beagle bone green + zen cape. It plays a drum beat and allows for 
-volume, tempo and beat controls via a joystick. As well as similar controls over a web server. It has some flaws, 
-and I was unable to complete the features using the accelerometer due to time constraints.
+volume, tempo and beat controls via a joystick. As well as similar controls over a web server.
+
+Joystick is built into the Zen Cape and controlled by directly accessing the GPIO pins attached to the joystick.
 
 ## Please consider the following
 Given that this is all for the sake of learning, I take advantage of course work to experiment with lots of different techniques/concepts 
@@ -17,6 +18,7 @@ why things did/didn't work well. So please keep that in mind when reading throug
 I will be putting together some personal projects where I intend to be more careful with quality, and hopefully safer regarding bugs and such.
 
 ## Dependancies
+- Beaglebone + Zen Cape
 - ARM compiler
 - libasound
 - NodeJS (to run server)
@@ -37,5 +39,5 @@ If the server is running, you can access a browser interface to the program by e
 The web page will give you access to volume, tempo, beat and drum controls.
 
 ### Server
-If the server is installed. Navigate to the nodejs directory on the target device, and enter the command 'node server' and it should start.
+If the server is installed. Navigate to the nodejs directory on the target device, and enter the command `node server` and it should start.
 Access the server through a browser using the instructions above.
